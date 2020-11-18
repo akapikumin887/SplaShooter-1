@@ -10,7 +10,7 @@
 class TestField : public GameObject
 {
 private:
-	ID3D11Buffer* m_VertexBuffer = NULL;
+	class Polygon3D* m_Polygon = nullptr;
 	void CreateVertex(Wrapper::VERTEX_3D Vertex[4]);
 public:
 	void Init()override;
