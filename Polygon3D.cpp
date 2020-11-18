@@ -28,7 +28,7 @@ Polygon3D::~Polygon3D()
 	m_VertexBuffer = NULL;
 }
 
-void Polygon3D::DrawPolygon(Wrapper::DirectX11& dx, D3DXVECTOR3 Position, D3DXVECTOR3 Rotation, D3DXVECTOR3 Scale)
+void Polygon3D::DrawPolygon(Wrapper::DirectX11 & dx, D3DXVECTOR3 Position, D3DXVECTOR3 Rotation, D3DXVECTOR3 Scale)
 {
 	// マトリクス設定
 	D3DXMATRIX world, scale, rot, trans;

@@ -54,8 +54,9 @@ void TestField::Draw()
 	Engine::ObjectPool::SetInputLayout(dx, Prefabs::VertexShader::MAPPING);
 	Engine::ObjectPool::SetVertexShader(dx, Prefabs::VertexShader::MAPPING);
 	Engine::ObjectPool::SetPixelShader(dx, Prefabs::PixelShader::MAPPING);
+
 	Engine::ObjectPool::SetTexture(dx, 0, Prefabs::Texture::ID::FIELD);
 	Engine::ObjectPool::SetTexture(dx, 1, Prefabs::Texture::ID::WAFFURU);
 	
-	m_Polygon->DrawPolygon(dx,m_Position,m_Rotation,m_Scale);
+	m_Polygon->DrawPolygon(dx, m_Position, m_Rotation, m_Scale);
 }
