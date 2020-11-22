@@ -10,26 +10,6 @@
 #include "Input.h"
 #include "GameObject.h"
 
-//キーボードの状態
-enum KEYSTATE : int
-{
-	STATE_TRIGGER,
-	STATE_PRESS,
-	STATE_RELEASE,
-	STATE_MAX
-};
-
-//キーボードの状態
-enum KEY : int
-{
-	KEY_W = 'W',
-	KEY_A = 'A',
-	KEY_S = 'S',
-	KEY_D = 'D',
-	KEY_ENTER = VK_RETURN,
-	KEY_SPACE = VK_SPACE,
-	KEY_MAX = 6
-};
 
 template<typename T>
 T& operator ++ (T& value)
@@ -51,7 +31,7 @@ void Input::Uninit()
 
 void Input::Update()
 {
-	KEY key = KEY_W;
+	KEYTYPE key = KEY_W;
 
 	//キーボードの状態取得
 	memcpy(m_OldKeyState, m_KeyState, 256);
